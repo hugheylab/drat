@@ -6,3 +6,17 @@ Imports: doParallel (>= 1.0.11), doRNG (>= 1.6.6), dplyr (>= 0.7.4), foreach (>=
 License: GPL-2
 MD5sum: b1b0e30cad43f44db9c16742bd445e7b
 NeedsCompilation: no
+
+Package: metapredict
+Version: 0.0.0.9018
+Depends: R (>= 3.2.1)
+Imports: affy (>= 1.48.0), annotate (>= 1.48.0), AnnotationDbi (>= 1.32.3), Biobase (>= 2.30.0),
+           BiocGenerics (>= 0.16.1), cba (>= 0.2-15), foreach (>= 1.4.3), GEOquery (>= 2.36.0),
+           ggplot2 (>= 2.2.1), glmnet (>= 2.0-2), gridExtra (>= 2.0.0), impute (>= 1.44.0), magrittr
+           (>= 1.5), matrixStats (>= 0.15.0), methods (>= 3.2.1), org.Dr.eg.db (>= 3.2.3),
+           org.Hs.eg.db (>= 3.2.3), org.Mm.eg.db (>= 3.2.3), pheatmap (>= 1.0.7), RColorBrewer (>=
+           1.1-2), sva (>= 3.18.0), tidyverse (>= 1.1.1)
+Suggests: knitr, rmarkdown
+License: GPL-2
+MD5sum: 9b316f09da96c0ef8cb14612e3b94841
+NeedsCompilation: no
