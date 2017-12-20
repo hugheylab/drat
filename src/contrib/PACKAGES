@@ -8,7 +8,7 @@ MD5sum: b1b0e30cad43f44db9c16742bd445e7b
 NeedsCompilation: no
 
 Package: metapredict
-Version: 0.0.0.9018
+Version: 0.0.0.9019
 Depends: R (>= 3.2.1)
 Imports: affy (>= 1.48.0), annotate (>= 1.48.0), AnnotationDbi (>= 1.32.3), Biobase (>= 2.30.0),
            BiocGenerics (>= 0.16.1), cba (>= 0.2-15), foreach (>= 1.4.3), GEOquery (>= 2.36.0),
@@ -18,5 +18,5 @@ Imports: affy (>= 1.48.0), annotate (>= 1.48.0), AnnotationDbi (>= 1.32.3), Biob
            1.1-2), sva (>= 3.18.0), tidyverse (>= 1.1.1)
 Suggests: knitr, rmarkdown
 License: GPL-2
-MD5sum: 9b316f09da96c0ef8cb14612e3b94841
+MD5sum: 2c57de7eab309c775ed36b944f357bf1
 NeedsCompilation: no
