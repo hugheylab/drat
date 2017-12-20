@@ -20,3 +20,13 @@ Suggests: knitr, rmarkdown
 License: GPL-2
 MD5sum: 2c57de7eab309c775ed36b944f357bf1
 NeedsCompilation: no
+
+Package: zeitzeiger
+Version: 1.0.0.4
+Depends: R (>= 3.2.1)
+Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), bigsplines (>= 1.0-7), doParallel (>= 1.0.10), dplyr
+           (>= 0.5.0), foreach (>= 1.4.3), magrittr (>= 1.5), PMA (>= 1.0.9), statmod (>= 1.4.30)
+Suggests: knitr, rmarkdown, tidyverse (>= 1.1.1)
+License: GPL-2
+MD5sum: c371f35c83ac6e4f05537efe43ea8564
+NeedsCompilation: no
