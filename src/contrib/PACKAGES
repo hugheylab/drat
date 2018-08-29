@@ -7,6 +7,16 @@ License: GPL-2
 MD5sum: b1b0e30cad43f44db9c16742bd445e7b
 NeedsCompilation: no
 
+Package: limorhyde
+Version: 0.0.0.9004
+Depends: R (>= 3.4.3)
+Suggests: annotate (>= 1.58.0), dplyr (>= 0.7.5), foreach (>= 1.4.4), GEOquery (>= 2.48.0), ggplot2
+           (>= 2.2.1), knitr (>= 1.20), limma (>= 3.36.1), org.Mm.eg.db (>= 3.6.0), rain (>=
+           1.14.0), tidyr (>= 0.8.1)
+License: GPL-2
+MD5sum: 66d396f97a1be3299f0150cba095669b
+NeedsCompilation: no
+
 Package: metapredict
 Version: 0.0.0.9019
 Depends: R (>= 3.2.1)
