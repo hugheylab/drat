@@ -1,20 +1,21 @@
 Package: deltaccd
-Version: 0.0.0.9003
+Version: 0.0.0.9004
 Depends: R (>= 3.4.1)
 Imports: doParallel (>= 1.0.11), doRNG (>= 1.6.6), dplyr (>= 0.7.4), foreach (>= 1.4.3), ggplot2 (>=
            2.2.1), magrittr (>= 1.5), scales (>= 0.5.0), statmod (>= 1.4.30), tidyr (>= 0.7.2)
 License: GPL-2
-MD5sum: b1b0e30cad43f44db9c16742bd445e7b
+MD5sum: 757500bf627069e403d60111d4a150df
 NeedsCompilation: no
 
 Package: limorhyde
-Version: 0.0.0.9004
+Version: 0.0.0.9005
 Depends: R (>= 3.4.3)
+Imports: bigsplines (>= 1.1-1)
 Suggests: annotate (>= 1.58.0), dplyr (>= 0.7.5), foreach (>= 1.4.4), GEOquery (>= 2.48.0), ggplot2
            (>= 2.2.1), knitr (>= 1.20), limma (>= 3.36.1), org.Mm.eg.db (>= 3.6.0), rain (>=
            1.14.0), tidyr (>= 0.8.1)
 License: GPL-2
-MD5sum: 66d396f97a1be3299f0150cba095669b
+MD5sum: d9065aa0fc6a9430c0c3fc0442fe20f3
 NeedsCompilation: no
 
 Package: metapredict
@@ -31,12 +32,20 @@ License: GPL-2
 MD5sum: 2c57de7eab309c775ed36b944f357bf1
 NeedsCompilation: no
 
+Package: tipa
+Version: 0.0.0.9004
+Depends: R (>= 3.4.2)
+Imports: optimr (>= 2016-8.16)
+License: GPL-2
+MD5sum: a15625b92c30502d2c7036f6db4778f9
+NeedsCompilation: no
+
 Package: zeitzeiger
-Version: 1.0.0.4
+Version: 1.0.0.6
 Depends: R (>= 3.2.1)
 Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), bigsplines (>= 1.0-7), doParallel (>= 1.0.10), dplyr
            (>= 0.5.0), foreach (>= 1.4.3), magrittr (>= 1.5), PMA (>= 1.0.9), statmod (>= 1.4.30)
 Suggests: knitr, rmarkdown, tidyverse (>= 1.1.1)
 License: GPL-2
-MD5sum: c371f35c83ac6e4f05537efe43ea8564
+MD5sum: 6f0a451170d78614646492340d8a03e2
 NeedsCompilation: no
