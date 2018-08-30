@@ -47,5 +47,5 @@ Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), bigsplines (>= 1.0-7), doParallel 
            (>= 0.5.0), foreach (>= 1.4.3), magrittr (>= 1.5), PMA (>= 1.0.9), statmod (>= 1.4.30)
 Suggests: knitr, rmarkdown, tidyverse (>= 1.1.1)
 License: GPL-2
-MD5sum: 6f0a451170d78614646492340d8a03e2
+MD5sum: 24aa9db1b34e56aac22a5a596f1622d4
 NeedsCompilation: no
