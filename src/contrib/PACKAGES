@@ -8,14 +8,14 @@ MD5sum: 757500bf627069e403d60111d4a150df
 NeedsCompilation: no
 
 Package: limorhyde
-Version: 0.0.0.9005
+Version: 0.0.0.9006
 Depends: R (>= 3.4.3)
-Imports: bigsplines (>= 1.1-1)
+Imports: pbs (>= 1.1)
 Suggests: annotate (>= 1.58.0), dplyr (>= 0.7.5), foreach (>= 1.4.4), GEOquery (>= 2.48.0), ggplot2
            (>= 2.2.1), knitr (>= 1.20), limma (>= 3.36.1), org.Mm.eg.db (>= 3.6.0), rain (>=
            1.14.0), tidyr (>= 0.8.1)
 License: GPL-2
-MD5sum: d9065aa0fc6a9430c0c3fc0442fe20f3
+MD5sum: 7e7a9b7b78cec9612ce855f77204b665
 NeedsCompilation: no
 
 Package: metapredict
