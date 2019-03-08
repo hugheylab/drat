@@ -34,13 +34,13 @@ MD5sum: c4dcc24a664d2a95850c9b271df80d8a
 NeedsCompilation: no
 
 Package: simphony
-Version: 0.0.0.9020
+Version: 0.0.0.9021
 Depends: R (>= 3.4)
 Imports: data.table (>= 1.11.4), foreach (>= 1.4.4)
 Suggests: ggplot2 (>= 3.0.0), kableExtra (>= 0.9.0), knitr (>= 1.20), limma (>= 3.34.9), precrec (>=
            0.9.1), rmarkdown (>= 1.9), testthat (>= 2.0.0)
 License: GPL-2
-MD5sum: ddb6de1e75589fb18d458a0273db84a5
+MD5sum: 7841e8c9c57cd7d9dfa925df92cbb795
 NeedsCompilation: no
 
 Package: tipa
