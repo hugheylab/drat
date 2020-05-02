@@ -44,11 +44,11 @@ MD5sum: b797c541c55580d1d57ff443894b24a5
 NeedsCompilation: no
 
 Package: tipa
-Version: 1.0.1
+Version: 1.0.2
 Depends: R (>= 3.4)
 Imports: optimr (>= 2016-8.16)
 License: GPL-2
-MD5sum: c51cc7b344d043723b816a06baa0fc70
+MD5sum: 151222aed29f3ea2acfea3c89663023b
 NeedsCompilation: no
 
 Package: zeitzeiger
