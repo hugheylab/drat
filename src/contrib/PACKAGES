@@ -15,10 +15,10 @@ Depends: R (>= 3.4)
 Imports: pbs (>= 1.1)
 Suggests: annotate (>= 1.58.0), data.table (>= 1.12.2), foreach (>=
         1.4.4), GEOquery (>= 2.48.0), ggplot2 (>= 2.2.1), knitr (>=
-        1.20), limma (>= 3.36.1), org.Mm.eg.db (>= 3.6.0), rmarkdown
-        (>= 1.9)
+        1.20), limma (>= 3.36.1), matrixStats (>= 0.56.0), org.Mm.eg.db
+        (>= 3.6.0), rmarkdown (>= 1.9)
 License: GPL-2
-MD5sum: 5c8ec61adcaf47487b0f84c6c03b78a4
+MD5sum: beb1d4948a743b059a54dfa0211ba882
 NeedsCompilation: no
 
 Package: metapredict
