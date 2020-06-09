@@ -46,7 +46,7 @@ Suggests: ggplot2 (>= 3.0.0), kableExtra (>= 0.9.0), knitr (>= 1.20),
         limma (>= 3.34.9), precrec (>= 0.9.1), rmarkdown (>= 1.9),
         testthat (>= 2.0.0)
 License: GPL-2
-MD5sum: 04dda845a078764a0fcf2a5a78a57d89
+MD5sum: cd477e6caf211d88762fe3d04750cf52
 NeedsCompilation: no
 
 Package: tipa
