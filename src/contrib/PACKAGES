@@ -67,5 +67,5 @@ Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), doParallel (>= 1.0.10),
 Suggests: ggplot2 (>= 3.1.0), knitr (>= 1.20), metapredict (>= 0.9.0),
         rmarkdown (>= 1.10), tidyr (>= 0.8.2)
 License: GPL-2
-MD5sum: b2cd5fe7111db3302e0ff2cf3f7ec686
+MD5sum: fc3104271eac83622455cfe50b877e2c
 NeedsCompilation: no
