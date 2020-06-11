@@ -49,6 +49,16 @@ License: GPL-2
 MD5sum: cd477e6caf211d88762fe3d04750cf52
 NeedsCompilation: no
 
+Package: spectr
+Version: 0.0.0.9012
+Depends: R (>= 3.6)
+Imports: data.table (>= 1.12.2), foreach (>= 1.5.0), imputeTS (>= 3.0),
+        lomb (>= 1.2)
+Suggests: knitr, rmarkdown
+License: GPL-2
+MD5sum: 3b7dd71e1099ee6861ad738c103d5024
+NeedsCompilation: no
+
 Package: tipa
 Version: 1.0.3
 Depends: R (>= 3.4)
