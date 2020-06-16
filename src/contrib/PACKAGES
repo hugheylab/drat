@@ -18,7 +18,7 @@ Suggests: annotate (>= 1.58.0), data.table (>= 1.12.2), foreach (>=
         1.20), limma (>= 3.36.1), matrixStats (>= 0.56.0), org.Mm.eg.db
         (>= 3.6.0), rmarkdown (>= 1.9)
 License: GPL-2
-MD5sum: b628fa7b7ae884aa8aa35e13565c6e84
+MD5sum: 8c79360826fdde7ff88d2c4174ec8f6e
 NeedsCompilation: no
 
 Package: metapredict
