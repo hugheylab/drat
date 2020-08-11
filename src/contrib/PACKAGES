@@ -59,12 +59,12 @@ MD5sum: 5783e778b35c37c1ac3248d4331bb0e8
 NeedsCompilation: no
 
 Package: tipa
-Version: 1.0.3
+Version: 1.0.4
 Depends: R (>= 3.4)
 Imports: optimr (>= 2016-8.16)
 Suggests: knitr, rmarkdown
 License: GPL-2
-MD5sum: 631ed2453190cf973dd4192d123175f7
+MD5sum: fd71b7c41af49febcef67941aad666b3
 NeedsCompilation: no
 
 Package: zeitzeiger
