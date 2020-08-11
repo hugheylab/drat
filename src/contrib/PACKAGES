@@ -50,13 +50,13 @@ MD5sum: 9b694f7dfd0e6d66c8f389ac3e949ab3
 NeedsCompilation: no
 
 Package: spectr
-Version: 0.0.0.9015
+Version: 0.0.0.9016
 Depends: R (>= 3.6)
 Imports: data.table (>= 1.12.2), foreach (>= 1.5.0), imputeTS (>= 3.0),
         lomb (>= 1.2)
 Suggests: doParallel (>= 1.0.15), knitr, rmarkdown, testthat (>= 2.3.2)
 License: GPL-2
-MD5sum: 0bfe16909e32cb885587aaee67a03110
+MD5sum: 3d00dadbbf39e82e7cf3911adc7dbc23
 NeedsCompilation: no
 
 Package: tipa
