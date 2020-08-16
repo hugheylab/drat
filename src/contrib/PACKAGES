@@ -55,7 +55,7 @@ Depends: R (>= 3.6)
 Imports: data.table (>= 1.12.2), foreach (>= 1.5.0), lomb (>= 1.2)
 Suggests: doParallel (>= 1.0.15), knitr, rmarkdown, testthat (>= 2.3.2)
 License: GPL-2
-MD5sum: 5783e778b35c37c1ac3248d4331bb0e8
+MD5sum: 93d7775058bb7178aa33e3a79768d23a
 NeedsCompilation: no
 
 Package: tipa
