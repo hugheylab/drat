@@ -39,7 +39,7 @@ MD5sum: 1f77909687d68d5cb4169eead34f223c
 NeedsCompilation: no
 
 Package: pmparser
-Version: 0.0.0.9020
+Version: 0.0.0.9021
 Depends: R (>= 3.6)
 Imports: arkdb (>= 0.0.5), data.table (>= 1.12.2), DBI (>= 1.1.0),
         foreach (>= 1.5.0), iterators (>= 1.0.12), jsonlite (>= 1.7.0),
@@ -48,7 +48,7 @@ Imports: arkdb (>= 0.0.5), data.table (>= 1.12.2), DBI (>= 1.1.0),
         withr (>= 2.2.0), xml2 (>= 1.3.2.9001)
 Suggests: doFuture (>= 0.9.0), testthat (>= 2.3.2)
 License: GPL-2
-MD5sum: cc768f9d47557e32fc4f8636a69a84f0
+MD5sum: de08edab6c0268a37ce145ccf6269f49
 NeedsCompilation: no
 
 Package: simphony
