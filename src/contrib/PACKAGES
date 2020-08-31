@@ -48,7 +48,7 @@ Imports: arkdb (>= 0.0.5), data.table (>= 1.12.2), DBI (>= 1.1.0),
         withr (>= 2.2.0), xml2 (>= 1.3.2.9001)
 Suggests: doFuture (>= 0.9.0), testthat (>= 2.3.2), covr
 License: GPL-2
-MD5sum: 1b33638f789194345ba2ef347394e5c0
+MD5sum: 7fc363c2af88eaf24725c64980009faa
 NeedsCompilation: no
 
 Package: simphony
