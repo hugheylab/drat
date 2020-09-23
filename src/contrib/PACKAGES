@@ -39,16 +39,16 @@ MD5sum: 1f77909687d68d5cb4169eead34f223c
 NeedsCompilation: no
 
 Package: pmparser
-Version: 0.0.0.9028
+Version: 0.0.0.9029
 Depends: R (>= 3.6)
-Imports: arkdb (>= 0.0.6), data.table (>= 1.12.2), DBI (>= 1.1.0),
-        foreach (>= 1.5.0), glue (>= 1.4.2), iterators (>= 1.0.12),
-        jsonlite (>= 1.7.0), RCurl (>= 1.98), vroom (>= 1.3.1), withr
-        (>= 2.2.0.9000), xml2 (>= 1.3.2.9001)
+Imports: data.table (>= 1.12.2), DBI (>= 1.1.0), foreach (>= 1.5.0),
+        glue (>= 1.4.2), iterators (>= 1.0.12), jsonlite (>= 1.7.0),
+        R.utils (>= 2.10.1), RCurl (>= 1.98), withr (>= 2.2.0.9000),
+        xml2 (>= 1.3.2.9001)
 Suggests: doFuture (>= 0.9.0), RMariaDB (>= 1.0.9), RPostgres (>=
         1.2.0), RSQLite (>= 2.2.0), testthat (>= 2.3.2), covr
 License: GPL-2
-MD5sum: a926b734e8edfafac147cf800010392b
+MD5sum: f840ddcaffd6ecf31a9e2d2f5e1618f3
 NeedsCompilation: no
 
 Package: simphony
