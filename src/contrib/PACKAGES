@@ -39,7 +39,7 @@ MD5sum: 1f77909687d68d5cb4169eead34f223c
 NeedsCompilation: no
 
 Package: pmparser
-Version: 0.0.0.9029
+Version: 0.0.0.9030
 Depends: R (>= 3.6)
 Imports: data.table (>= 1.12.2), DBI (>= 1.1.0), foreach (>= 1.5.0),
         glue (>= 1.4.2), iterators (>= 1.0.12), jsonlite (>= 1.7.0),
@@ -48,7 +48,7 @@ Imports: data.table (>= 1.12.2), DBI (>= 1.1.0), foreach (>= 1.5.0),
 Suggests: doFuture (>= 0.9.0), RMariaDB (>= 1.0.9), RPostgres (>=
         1.2.0), RSQLite (>= 2.2.0), testthat (>= 2.3.2), covr
 License: GPL-2
-MD5sum: f840ddcaffd6ecf31a9e2d2f5e1618f3
+MD5sum: ea4923edb1f5e2cad744fe687dd11638
 NeedsCompilation: no
 
 Package: simphony
