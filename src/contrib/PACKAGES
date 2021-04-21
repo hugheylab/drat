@@ -781,8 +781,8 @@ Depends: R (>= 3.2)
 Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), doParallel (>= 1.0.10),
         dplyr (>= 0.5.0), foreach (>= 1.4.3), limma (>= 3.38.2),
         magrittr (>= 1.5), PMA (>= 1.0.9), statmod (>= 1.4.30)
-Suggests: ggplot2 (>= 3.1.0), knitr (>= 1.20), metapredict (>= 0.9.0),
-        rmarkdown (>= 1.10), tidyr (>= 0.8.2)
+Suggests: covr, ggplot2 (>= 3.1.0), knitr (>= 1.20), metapredict (>=
+        0.9.0), rmarkdown (>= 1.10), tidyr (>= 0.8.2)
 License: GPL-2
-MD5sum: e6ab49da404b7f7abbd14e51a892105b
+MD5sum: 2963af2e33a384142cf4937e2890bf83
 NeedsCompilation: no
