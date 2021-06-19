@@ -156,6 +156,17 @@ License: GPL-2
 MD5sum: 82140847b0c19d06895306818da923e3
 NeedsCompilation: no
 
+Package: limorhyde2
+Version: 0.0.0.9015
+Depends: R (>= 3.6)
+Imports: abind (>= 1.4-5), ashr (>= 2.2-51), checkmate (>= 2.0.0), data.table (>= 1.12.8), foreach (>= 1.5.0),
+             HDInterval (>= 0.2.2), iterators (>= 1.0.12), limma (>= 3.42.2), mashr (>= 0.2.50), pbs (>= 1.1), zeallot
+             (>= 0.1.0)
+Suggests: doParallel (>= 1.0.15), testthat (>= 3.0.0)
+License: GPL-2
+MD5sum: 2a71b8eb0eae1d7c965ab5983b830b00
+NeedsCompilation: no
+
 Package: metapredict
 Version: 0.0.0.9018
 Depends: R (>= 3.2.1)
