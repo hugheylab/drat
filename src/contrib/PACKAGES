@@ -838,5 +838,5 @@ Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), doParallel (>= 1.0.10),
 Suggests: covr, ggplot2 (>= 3.1.0), knitr (>= 1.20), metapredict (>=
         0.9.0), rmarkdown (>= 1.10), tidyr (>= 0.8.2)
 License: GPL-2
-MD5sum: 2963af2e33a384142cf4937e2890bf83
+MD5sum: a0060f6529067975f9546f2d6774d78f
 NeedsCompilation: no
