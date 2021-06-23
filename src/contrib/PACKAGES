@@ -86,9 +86,9 @@ Version: 0.2.2
 Depends: R (>= 3.4)
 Imports: doRNG (>= 1.6.6), foreach (>= 1.4.3), ggplot2 (>= 2.2.1),
         scales (>= 0.5.0), statmod (>= 1.4.30), data.table (>= 1.14.0)
-Suggests: covr, doParallel (>= 1.0.11), knitr, rmarkdown
+Suggests: doParallel (>= 1.0.11), knitr, rmarkdown
 License: GPL-2
-MD5sum: 11ab0d91a526bf70d2d973bf1f25079f
+MD5sum: 72dc18a2b52fae1613f23d4cd75855de
 NeedsCompilation: no
 
 Package: limorhyde
