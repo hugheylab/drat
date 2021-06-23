@@ -563,9 +563,9 @@ Imports: data.table (>= 1.12.2), DBI (>= 1.1.0), foreach (>= 1.5.0),
         (>= 1.3.2.9001)
 Suggests: bigrquery (>= 1.3.2), doFuture (>= 0.9.0), RClickhouse (>=
         0.5.2), RMariaDB (>= 1.0.9), RPostgres (>= 1.2.0), RSQLite (>=
-        2.2.0), testthat (>= 2.3.2), covr, knitr, rmarkdown
+        2.2.0), testthat (>= 2.3.2), knitr, rmarkdown
 License: GPL-2
-MD5sum: d1cbbfcc3925873a1e54e0e2f2c64e05
+MD5sum: 5ab0d49f5e139e32afefe8425769d0e4
 NeedsCompilation: no
 
 Package: simphony
