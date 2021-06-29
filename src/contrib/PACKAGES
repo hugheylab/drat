@@ -706,11 +706,11 @@ Package: simphony
 Version: 0.1.8
 Depends: R (>= 3.4)
 Imports: data.table (>= 1.11.4), foreach (>= 1.4.4)
-Suggests: covr, ggplot2 (>= 3.0.0), kableExtra (>= 0.9.0), knitr (>=
-        1.20), limma (>= 3.34.9), precrec (>= 0.9.1), rmarkdown (>=
-        1.9), testthat (>= 2.0.0)
+Suggests: ggplot2 (>= 3.0.0), kableExtra (>= 0.9.0), knitr (>= 1.20),
+        limma (>= 3.34.9), precrec (>= 0.9.1), rmarkdown (>= 1.9),
+        testthat (>= 2.0.0)
 License: GPL-2
-MD5sum: fe14917a035a29773b2bd12c7fa55041
+MD5sum: e225a3464f0bde62f2b343d66c9fd194
 NeedsCompilation: no
 
 Package: spectr
