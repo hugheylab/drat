@@ -112,6 +112,18 @@ License: GPL-2
 MD5sum: 80648c116b2121bbdc937d3be6fa2f27
 NeedsCompilation: no
 
+Package: deltaccd
+Version: 0.2.5
+Depends: R (>= 3.4)
+Imports: doRNG (>= 1.6.6), foreach (>= 1.4.3), ggplot2 (>= 2.2.1),
+        rlang (>= 0.4.11), scales (>= 0.5.0), statmod (>= 1.4.30),
+        data.table (>= 1.14.0)
+Suggests: doParallel (>= 1.0.11), knitr, rmarkdown, testthat (>=
+        3.0.0), vdiffr
+License: GPL-2
+MD5sum: c98e7a34fb91b8f04848f4a18a1b233d
+NeedsCompilation: no
+
 Package: limorhyde
 Version: 0.0.0.9004
 Depends: R (>= 3.4.3)
