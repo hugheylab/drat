@@ -668,6 +668,20 @@ License: GPL-2
 MD5sum: 5ab0d49f5e139e32afefe8425769d0e4
 NeedsCompilation: no
 
+Package: pmparser
+Version: 1.0.1
+Depends: R (>= 3.6)
+Imports: data.table (>= 1.12.2), DBI (>= 1.1.0), foreach (>= 1.5.0),
+        glue (>= 1.4.2), iterators (>= 1.0.12), jsonlite (>= 1.7.0),
+        R.utils (>= 2.10.1), RCurl (>= 1.98), withr (>= 2.3.0), xml2
+        (>= 1.3.2.9001)
+Suggests: bigrquery (>= 1.3.2), doFuture (>= 0.9.0), RClickhouse (>=
+        0.5.2), RMariaDB (>= 1.0.9), RPostgres (>= 1.2.0), RSQLite (>=
+        2.2.0), testthat (>= 2.3.2), knitr, rmarkdown
+License: GPL-2
+MD5sum: a0dcd7a171bd4fda5bbf600458933722
+NeedsCompilation: no
+
 Package: simphony
 Version: 0.0.0.9017
 Depends: R (>= 3.4)
