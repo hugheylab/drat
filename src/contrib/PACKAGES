@@ -454,7 +454,7 @@ Imports: affy (>= 1.48.0), annotate (>= 1.48.0), AnnotationDbi (>=
         RColorBrewer (>= 1.1-2), rlang (>= 0.4.11), sva (>= 3.18.0)
 Suggests: knitr, rmarkdown, withr (>= 2.4.0), testthat (>= 3.0.0)
 License: GPL-2
-MD5sum: 052b7e764be800729a951369cfe09a86
+MD5sum: 204eae7b6691bfcfbacbe38527d4a333
 NeedsCompilation: no
 
 Package: pmparser
