@@ -973,11 +973,11 @@ NeedsCompilation: no
 
 Package: tipa
 Version: 1.0.4
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.4)
 Imports: optimr (>= 2016-8.16)
 Suggests: knitr, rmarkdown
 License: GPL-2
-MD5sum: d89502abde46508199dc50a3ea23f432
+MD5sum: 33a5aefed77c0fe256085ecb3ab0207d
 NeedsCompilation: no
 
 Package: zeitzeiger
