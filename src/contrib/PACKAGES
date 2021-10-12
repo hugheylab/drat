@@ -861,7 +861,7 @@ Suggests: ggplot2 (>= 3.0.0), kableExtra (>= 0.9.0), knitr (>= 1.20),
         limma (>= 3.34.9), precrec (>= 0.9.1), rmarkdown (>= 1.9),
         testthat (>= 2.0.0)
 License: GPL-2
-MD5sum: 8e53496bd23532f8359d9af57a1ce33c
+MD5sum: 0034eaacd4faad6a5f4f657ed550d5df
 NeedsCompilation: no
 
 Package: spectr
