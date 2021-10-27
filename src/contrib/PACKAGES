@@ -786,7 +786,7 @@ Imports: biomaRt (>= 2.36.1), checkmate (>= 2.0.0), curl (>= 3.2),
 Suggests: doFuture (>= 0.10.0), doParallel (>= 1.0.16), knitr, rhdf5
         (>= 2.24.0), rmarkdown
 License: GPL-2
-MD5sum: f8513b48abae4093d9ef9bc8dfae14d3
+MD5sum: 2e3decb4d639e9d1d8099410787adee1
 NeedsCompilation: no
 
 Package: simphony
