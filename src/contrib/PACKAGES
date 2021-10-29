@@ -802,6 +802,19 @@ License: GPL-2
 MD5sum: facfff75343101e3f1739cb520894363
 NeedsCompilation: no
 
+Package: seeker
+Version: 0.0.0.9031
+Depends: R (>= 3.5)
+Imports: biomaRt (>= 2.36.1), checkmate (>= 2.0.0), curl (>= 3.2),
+        data.table (>= 1.11.8), foreach (>= 1.4.4), readr (>= 1.4.0),
+        rjson (>= 0.2.20), tximport (>= 1.8.0), qs (>= 0.21.2), yaml
+        (>= 2.2.1)
+Suggests: doFuture (>= 0.10.0), doParallel (>= 1.0.16), knitr, rhdf5
+        (>= 2.24.0), rmarkdown
+License: GPL-2
+MD5sum: 34e5e9135864631f4a414a97dfcdf769
+NeedsCompilation: no
+
 Package: simphony
 Version: 0.0.0.9017
 Depends: R (>= 3.4)
