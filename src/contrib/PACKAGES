@@ -1210,12 +1210,12 @@ NeedsCompilation: no
 
 Package: zeitzeiger
 Version: 2.0.3
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.2)
 Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), doParallel (>= 1.0.10),
         dplyr (>= 0.5.0), foreach (>= 1.4.3), limma (>= 3.38.2),
         magrittr (>= 1.5), PMA (>= 1.0.9), statmod (>= 1.4.30)
 Suggests: ggplot2 (>= 3.1.0), knitr (>= 1.20), metapredict (>= 0.9.0),
         rmarkdown (>= 1.10), tidyr (>= 0.8.2)
 License: GPL-2
-MD5sum: 7ff5627503ff4a4a77c0e526f4c37f4b
+MD5sum: 147aaaeef0dae37c47ac8bc4da791e5b
 NeedsCompilation: no
