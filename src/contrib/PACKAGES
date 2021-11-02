@@ -214,9 +214,10 @@ Imports: pbs (>= 1.1)
 Suggests: annotate (>= 1.58.0), data.table (>= 1.12.2), foreach (>=
         1.4.4), GEOquery (>= 2.48.0), ggplot2 (>= 2.2.1), knitr (>=
         1.20), limma (>= 3.36.1), matrixStats (>= 0.56.0), org.Mm.eg.db
-        (>= 3.6.0), rmarkdown (>= 1.9), testthat (>= 3.0.4)
+        (>= 3.6.0), R.utils (>= 2.11.0), rmarkdown (>= 1.9), testthat
+        (>= 3.0.4)
 License: GPL-2
-MD5sum: aefe78b03534630b63502647541cd53a
+MD5sum: 3c476ae532779ad3ac967dadd270e551
 NeedsCompilation: no
 
 Package: limorhyde2
