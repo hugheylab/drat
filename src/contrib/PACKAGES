@@ -217,7 +217,7 @@ Suggests: annotate (>= 1.58.0), data.table (>= 1.12.2), foreach (>=
         (>= 3.6.0), R.utils (>= 2.11.0), rmarkdown (>= 1.9), testthat
         (>= 3.0.4)
 License: GPL-2
-MD5sum: 3c476ae532779ad3ac967dadd270e551
+MD5sum: b6291f32de333b30fa8031c82090d6b4
 NeedsCompilation: no
 
 Package: limorhyde2
