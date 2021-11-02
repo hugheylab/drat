@@ -344,7 +344,7 @@ Imports: abind (>= 1.4-5), ashr (>= 2.2-51), checkmate (>= 2.0.0),
 Suggests: cowplot (>= 1.1.1), knitr, doParallel (>= 1.0.15), ggplot2
         (>= 3.3.5), qs (>= 0.24.1), rmarkdown, testthat (>= 3.0.0)
 License: GPL-2
-MD5sum: bf6e94288a10e49bf28f5e8374f7a88e
+MD5sum: c666c9a3443b675b085fb85f582ea18b
 NeedsCompilation: no
 
 Package: metapredict
