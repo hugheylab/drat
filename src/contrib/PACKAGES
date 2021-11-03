@@ -943,7 +943,7 @@ Suggests: ggplot2 (>= 3.0.0), kableExtra (>= 0.9.0), knitr (>= 1.20),
         limma (>= 3.34.9), precrec (>= 0.9.1), rmarkdown (>= 1.9),
         testthat (>= 2.0.0)
 License: GPL-2
-MD5sum: 5cde01c910eb2c64b866861849d52d5c
+MD5sum: 6f12c7bb0b750ba57ef88bed719fdde9
 NeedsCompilation: no
 
 Package: simphony
