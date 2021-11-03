@@ -145,7 +145,7 @@ Imports: doRNG (>= 1.6.6), foreach (>= 1.4.3), ggplot2 (>= 2.2.1),
 Suggests: doParallel (>= 1.0.11), knitr, rmarkdown, testthat (>=
         3.0.0), vdiffr
 License: GPL-2
-MD5sum: cb1cae580ba99ca9c1fdd07e95ce9d4c
+MD5sum: 3ad83f534b21d5eb5586ea201c3fd02b
 NeedsCompilation: no
 
 Package: limorhyde
