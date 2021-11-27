@@ -1377,3 +1377,16 @@ Suggests: ggplot2 (>= 3.1.0), knitr (>= 1.20), metapredict (>= 0.9.0),
 License: GPL-2
 MD5sum: 147aaaeef0dae37c47ac8bc4da791e5b
 NeedsCompilation: no
+
+Package: zeitzeiger
+Version: 2.0.4
+Depends: R (>= 3.2)
+Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), doParallel (>= 1.0.10),
+        dplyr (>= 0.5.0), foreach (>= 1.4.3), limma (>= 3.38.2),
+        magrittr (>= 1.5), PMA (>= 1.0.9), statmod (>= 1.4.30), sva (>=
+        3.18.0)
+Suggests: ggplot2 (>= 3.1.0), knitr (>= 1.20), rmarkdown (>= 1.10),
+        tidyr (>= 0.8.2)
+License: GPL-2
+MD5sum: b1de6fd93359afc93a9241d87af2e807
+NeedsCompilation: no
