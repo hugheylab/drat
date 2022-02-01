@@ -1484,7 +1484,7 @@ Depends: R (>= 3.4)
 Imports: optimr (>= 2016-8.16)
 Suggests: knitr, rmarkdown
 License: GPL-2
-MD5sum: dc8e26e860df3543cbd00cffb529f415
+MD5sum: d4926c8c237cbc26103aa7e3ce94c8bc
 NeedsCompilation: no
 
 Package: zeitzeiger
