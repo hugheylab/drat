@@ -1603,5 +1603,5 @@ Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), doParallel (>= 1.0.10),
 Suggests: ggplot2 (>= 3.1.0), knitr (>= 1.20), rmarkdown (>= 1.10),
         tidyr (>= 0.8.2)
 License: GPL-2
-MD5sum: 9129fbd8b810b222205f177f38bf09bd
+MD5sum: 0c6a112ef2557a763936807a9064e5d6
 NeedsCompilation: no
