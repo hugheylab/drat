@@ -563,7 +563,7 @@ Imports: affy (>= 1.48.0), annotate (>= 1.48.0), AnnotationDbi (>=
         (>= 3.18.0)
 Suggests: knitr, rmarkdown, withr (>= 2.4.0), testthat (>= 3.0.0)
 License: GPL-2
-MD5sum: 6f8972a738099e6b7eeff71480d8a0d4
+MD5sum: c0ee1a211864f7417477a59bb697441b
 NeedsCompilation: no
 
 Package: pmparser
