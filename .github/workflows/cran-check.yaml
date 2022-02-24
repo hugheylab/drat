@@ -80,7 +80,22 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: hugheylab/actions/create-issue@main
-        with:
-          package_string: ${{ matrix.value }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+
+      - name: Split package_string
+        id: split-string
+        run: |
+          PACKAGE_NAME=$(echo ${{ matrix.value }} | awk 'BEGIN {FS="---" } ; { print $1 }')
+          echo "::set-output name=PACKAGE_NAME::$PACKAGE_NAME"
+          DRAT_VERSION=$(echo ${{ matrix.value }} | awk 'BEGIN {FS="---" } ; { print $2 }')
+          echo "::set-output name=DRAT_VERSION::$DRAT_VERSION"
+          CRAN_VERSION=$(echo ${{ matrix.value }} | awk 'BEGIN {FS="---" } ; { print $3 }')
+          echo "::set-output name=CRAN_VERSION::$CRAN_VERSION"
+        shell: bash
+
+      - uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ inputs.github_token }}
+          PACKAGE_NAME: ${{ steps.split-string.outputs.PACKAGE_NAME }}
+          DRAT_VERSION: ${{ steps.split-string.outputs.DRAT_VERSION }}
+          CRAN_VERSION: ${{ steps.split-string.outputs.CRAN_VERSION }}
