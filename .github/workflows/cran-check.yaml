@@ -16,87 +16,55 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: r-lib/actions/setup-pandoc@v1
+      - uses: r-lib/actions/setup-pandoc@v2
 
-      - uses: r-lib/actions/setup-r@v1
+      - uses: r-lib/actions/setup-r@v2
         with:
-          r-version: ${{ matrix.config.r }}
-          http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
 
-      - name: Check to deploy
-        id: get_packages
+      - id: get_packages
         run: |
-          cd drat
-          FILE=src/contrib/${PKG_TARBALL}
-          echo "File: ${FILE}."
-          DEPLOY=true
-          if test -f "${FILE}"
-          then
-            echo "Current version of package is on drat repo."
-            mkdir ../tmpDirNew
-            tar xvzf "../${PKG_TARBALL}" -C ../tmpDirNew/
-            sed -i '/DESCRIPTION$/d' ../tmpDirNew/${PKG_NAME}/MD5
-            sed -i '/build\/.*$/d' ../tmpDirNew/${PKG_NAME}/MD5
-            sed -i '/inst\/doc\/.*$/d' ../tmpDirNew/${PKG_NAME}/MD5
-            MD5_FILE_NEW=$(cat ../tmpDirNew/${PKG_NAME}/MD5)
-            echo "Current MD5: ${MD5_FILE_NEW}"
-            sed -i '/Packaged:/d' ../tmpDirNew/${PKG_NAME}/DESCRIPTION
-            cd ../tmpDirNew/
-            SHA_DESC_NEW=$(sha256sum ${PKG_NAME}/DESCRIPTION)
-            cd ../drat
-            mkdir ../tmpDirOld
-            tar xvzf "../drat/src/contrib/${PKG_TARBALL}" -C ../tmpDirOld/
-            echo "Checking for previous MD5 file."
-            MD5_FILE="../tmpDirOld/${PKG_NAME}/MD5"
-            if test -f "${MD5_FILE}"
-            then
-              echo "Found previous MD5 file."
-              sed -i '/DESCRIPTION$/d' ../tmpDirOld/${PKG_NAME}/MD5
-              sed -i '/build\/.*$/d' ../tmpDirOld/${PKG_NAME}/MD5
-              sed -i '/inst\/doc\/.*$/d' ../tmpDirOld/${PKG_NAME}/MD5
-              MD5_FILE_OLD=$(cat ../tmpDirOld/${PKG_NAME}/MD5)
-              echo "Previous MD5: ${MD5_FILE_OLD}"
-              sed -i '/Packaged:/d' ../tmpDirOld/${PKG_NAME}/DESCRIPTION
-              cd ../tmpDirOld/
-              SHA_DESC_OLD=$(sha256sum ${PKG_NAME}/DESCRIPTION)
-              cd ../drat
-              echo "SHA_DESC_NEW: ${SHA_DESC_NEW}"
-              echo "SHA_DESC_OLD: ${SHA_DESC_OLD}"
-              cd ../tmpDirNew
-              SHA_TARBALL_NEW=$(sha256sum ${PKG_NAME}/MD5)
-              echo "SHA_TARBALL_NEW: ${SHA_TARBALL_NEW}"
-              cd ../tmpDirOld
-              SHA_TARBALL_OLD=$(sha256sum ${PKG_NAME}/MD5)
-              echo "SHA_TARBALL_OLD: ${SHA_TARBALL_OLD}"
-              cd ../drat
-              if [ "${SHA_TARBALL_OLD}" = "${SHA_TARBALL_NEW}" ] && [ "${SHA_DESC_NEW}" = "${SHA_DESC_OLD}" ]
-              then
-                echo "SHAs match, not deploying."
-                DEPLOY=false
-              else
-                echo "SHAs don't match, deploying."
-              fi
-            else
-              echo "No MD5 file found, deploying."
-            fi
-          else
-            echo "Current version of package is not on drat repo, deploying."
-          fi
-          if [ ${DEPLOY} = true ]
-          then
-            echo "Deploying."
-            cd ../drat
-            git config --global user.email "jakejhughey@gmail.com"
-            git config --global user.name "Jake Hughey"
-            Rscript \
-              -e "install.packages('drat')" \
-              -e "drat::insertPackage('../${PKG_TARBALL}', '.')"
-            git add src/contrib/
-            git commit -m "Updated to ${PKG_NAME} ${PKG_VERSION} via GitHub Actions"
-            git push -q https://jakejh:${{ inputs.personal-token }}@github.com/hugheylab/drat.git
-          fi
-        shell: bash
+          install.packages('data.table')
+          library('data.table')
+
+          # Read files in drat folder, extract names, and filter to max versions of package found.
+          dratPackages = data.table(filename = list.files(file.path('src', 'contrib')))
+          dratPackages[, filename := gsub('.tar.gz', '', filename, fixed = TRUE)]
+          dratPackages = dratPackages[, c('name', 'version') := tstrsplit(filename, '_', fixed = TRUE)]
+          dratPackages = dratPackages[
+            !is.na(version), .(drat_version = max(version)), by = name]
+
+          # Establish version levels and split out into separate columns
+          versionLevels = c('major', 'minor', 'patch', 'dev')
+          dratPackages[, (paste0('drat_', versionLevels)) :=
+                        tstrsplit(drat_version, '.', fixed = TRUE, type.convert = TRUE)]
+
+          # Read in packages availability on CRAN and merge with drat data.table
+          cranPackages = as.data.table(available.packages(repos = 'https://cran.rstudio.com/'))
+          cranPackages = cranPackages[, .(name = Package, cran_version = Version)]
+          packages = merge(dratPackages, cranPackages, by = 'name')
+
+          # Split out CRAN version levels (assuming no dev level exists on CRAN)
+          packages[, (paste0('cran_', versionLevels[1:3])) :=
+                    tstrsplit(cran_version, '.', fixed = TRUE, type.convert = TRUE)]
+
+          # Figure out which rows need update on CRAN
+          packages[, needs_cran_update := 0]
+          packages[
+            drat_major > cran_major |
+            drat_minor > cran_minor + 2 |
+            drat_patch > cran_patch + 5,
+            needs_cran_update := 1]
+
+          packages = packages[needs_cran_update == 1]
+
+          needsUpdatesOutput = paste0(packages$name, '---', packages$drat_version, '---', packages$cran_version, collapse = '\\", \\"')
+          needsUpdatesOutput = paste0('[\\"', needsUpdatesOutput, '\\"]')
+
+          s = sprintf('echo \'::set-output name=value::%s\'', needsUpdatesOutput)
+          system(s)
+
+        shell: Rscript {0}
 
 
   create_issue:
