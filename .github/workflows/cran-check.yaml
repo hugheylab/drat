@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check version numbers of packages
     outputs:
-        matrix: ${{ steps.matrix.get_packages.value }}
+        matrix: ${{ steps.get_packages.outputs.value }}
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
@@ -19,7 +19,7 @@ jobs:
 
 
   create_issue:
-    needs: check_version_number
+    needs: [ check_version_number ]
     runs-on: ubuntu-latest
     name: Create issue for packages
     permissions:
