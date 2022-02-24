@@ -58,8 +58,8 @@ jobs:
 
           packages = packages[needs_cran_update == 1]
 
-          needsUpdatesOutput = paste0(packages$name, '---', packages$drat_version, '---', packages$cran_version, collapse = '\\", \\"')
-          needsUpdatesOutput = paste0('[\\"', needsUpdatesOutput, '\\"]')
+          needsUpdatesOutput = paste0(packages$name, '---', packages$drat_version, '---', packages$cran_version, collapse = '", "')
+          needsUpdatesOutput = paste0('["', needsUpdatesOutput, '"]')
 
           s = sprintf('echo \'::set-output name=value::%s\'', needsUpdatesOutput)
           system(s)
