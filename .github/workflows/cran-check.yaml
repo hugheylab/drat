@@ -70,16 +70,17 @@ jobs:
   create_issue:
     needs: [ check_version_number ]
     runs-on: ubuntu-latest
-    name: Create issue for packages
     permissions:
       contents: read
       issues: write
     strategy:
       matrix:
         value: ${{fromJson(needs.check_version_number.outputs.matrix)}}
+    name: Create issue for packages ${{ matrix.value }}
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: hugheylab/actions/create-issue@main
         with:
           package_string: ${{ matrix.value }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
