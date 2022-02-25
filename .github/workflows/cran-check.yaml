@@ -74,13 +74,13 @@ jobs:
         id: issues
         uses: lee-dohm/select-matching-issues@v1
         with:
-          query: 'label:cran update'
+          query: 'label:cran-update is:open'
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Close found issues
         run: cat ${{ steps.issues.outputs.path }} | xargs gh issue close
 
   create_issue:
-    needs: [ check_version_number ]
+    needs: [ check_version_number, close_open_cran ]
     runs-on: ubuntu-latest
     permissions:
       contents: read
