@@ -67,12 +67,12 @@ jobs:
         shell: Rscript {0}
 
   close_open_cran:
-    name: Close all issues labeled "cran update"
+    name: Close all issues labeled "cran-update"
     runs-on: ubuntu-latest
     steps:
       - name: Find all cran update issues
         id: issues
-        uses: lee-dohm/select-matching-issues@v1
+        uses: lee-dohm/select-matching-issues@v1.2.0
         with:
           query: 'label:cran-update is:open'
           token: ${{ secrets.GITHUB_TOKEN }}
