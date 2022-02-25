@@ -122,4 +122,4 @@ jobs:
             Drat version: ${{ steps.split-string.outputs.DRAT_VERSION }}
             CRAN version: ${{ steps.split-string.outputs.CRAN_VERSION }}
           labels: |
-            cran update
+            cran-update
