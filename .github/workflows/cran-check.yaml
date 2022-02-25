@@ -80,7 +80,7 @@ jobs:
         run: |
           for OUTPUT in $(cat ${{ steps.issues.outputs.path }})
           do
-            $OUTPUT | xargs gh issue close
+            gh issue close "$OUTPUT"
           done
         shell: bash
 
