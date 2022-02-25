@@ -77,7 +77,12 @@ jobs:
           query: 'label:cran-update is:open'
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Close found issues
-        run: xargs -a ${{ steps.issues.outputs.path }} gh issue close
+        run: |
+          for OUTPUT in $(cat ${{ steps.issues.outputs.path }})
+          do
+            $OUTPUT | xargs gh issue close
+          done
+        shell: bash
 
   create_issue:
     needs: [ check_version_number, close_open_cran ]
