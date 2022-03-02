@@ -570,7 +570,7 @@ Suggests: cowplot (>= 1.1.1), knitr, doParallel (>= 1.0.15), ggplot2
         (>= 3.3.5), glue (>= 1.6.1), qs (>= 0.24.1), rmarkdown,
         testthat (>= 3.0.0)
 License: GPL-2
-MD5sum: 37ea91a4cb64531f9e0ad07f315a06ed
+MD5sum: 3424cb6019411d7223214df69f4b2185
 NeedsCompilation: no
 
 Package: metapredict
