@@ -559,6 +559,34 @@ License: GPL-2
 MD5sum: 1a7e9861423ee52baf04561b40121ee8
 NeedsCompilation: no
 
+Package: limorhyde2
+Version: 0.0.6
+Depends: R (>= 3.6)
+Imports: abind (>= 1.4-5), ashr (>= 2.2-54), checkmate (>= 2.0.0),
+        data.table (>= 1.12.8), DESeq2 (>= 1.30.0), foreach (>= 1.5.0),
+        HDInterval (>= 0.2.2), iterators (>= 1.0.12), limma (>=
+        3.42.2), mashr (>= 0.2.50), pbs (>= 1.1), zeallot (>= 0.1.0)
+Suggests: cowplot (>= 1.1.1), knitr, doParallel (>= 1.0.15), ggplot2
+        (>= 3.3.5), glue (>= 1.6.1), qs (>= 0.24.1), rmarkdown,
+        testthat (>= 3.0.0)
+License: GPL-2
+MD5sum: 3424cb6019411d7223214df69f4b2185
+NeedsCompilation: no
+
+Package: limorhyde2
+Version: 0.0.7
+Depends: R (>= 3.6)
+Imports: abind (>= 1.4-5), ashr (>= 2.2-54), checkmate (>= 2.0.0),
+        data.table (>= 1.12.8), DESeq2 (>= 1.30.0), foreach (>= 1.5.0),
+        HDInterval (>= 0.2.2), iterators (>= 1.0.12), limma (>=
+        3.42.2), mashr (>= 0.2.50), pbs (>= 1.1), zeallot (>= 0.1.0)
+Suggests: cowplot (>= 1.1.1), knitr, doParallel (>= 1.0.15), ggplot2
+        (>= 3.3.5), glue (>= 1.6.1), qs (>= 0.24.1), rmarkdown,
+        testthat (>= 3.0.0)
+License: GPL-2
+MD5sum: e3af7de505ec47b729f01804836ef392
+NeedsCompilation: no
+
 Package: metapredict
 Version: 0.0.0.9018
 Depends: R (>= 3.2.1)
@@ -1363,7 +1391,22 @@ Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), ArrayExpress (>=
         3.1.0), tximport (>= 1.8.0), withr (>= 2.4.2), yaml (>= 2.2.1)
 Suggests: doParallel (>= 1.0.16), knitr, org.Mm.eg.db, rmarkdown
 License: GPL-2
-MD5sum: 53183f1a4a866c9b687b3892ab042340
+MD5sum: 02eb17244efcedc4dd9b9e481b207bf2
+NeedsCompilation: no
+
+Package: seeker
+Version: 0.0.0.9054
+Depends: R (>= 3.5)
+Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), ArrayExpress (>=
+        1.50.0), BiocManager (>= 1.30.0), biomaRt (>= 2.36.1),
+        checkmate (>= 2.0.0), curl (>= 3.2), data.table (>= 1.11.8),
+        foreach (>= 1.4.4), GEOquery (>= 2.58.0), glue (>= 1.5.0),
+        jsonlite (>= 1.7.2), methods, qs (>= 0.21.2), R.utils (>=
+        2.11.0), readr (>= 1.4.0), sessioninfo (>= 1.2.0), testthat (>=
+        3.1.0), tximport (>= 1.8.0), withr (>= 2.4.2), yaml (>= 2.2.1)
+Suggests: doParallel (>= 1.0.16), knitr, org.Mm.eg.db, rmarkdown
+License: GPL-2
+MD5sum: 640ec93376e65f63181eecf13097fffd
 NeedsCompilation: no
 
 Package: simphony
