@@ -1,5 +1,3 @@
-# Workflow derived from https://github.com/r-lib/actions/tree/master/examples
-# Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on: push
 
 name: cran-check
@@ -36,8 +34,9 @@ jobs:
 
           # Establish version levels and split out into separate columns
           versionLevels = c('major', 'minor', 'patch', 'dev')
-          dratPackages[, (paste0('drat_', versionLevels)) :=
-                        tstrsplit(drat_version, '.', fixed = TRUE, type.convert = TRUE)]
+          dratPackages[
+            , (paste0('drat_', versionLevels)) := 
+            tstrsplit(drat_version, '.', fixed = TRUE, type.convert = TRUE)]
 
           # Read in packages availability on CRAN and merge with drat data.table
           cranPackages = as.data.table(available.packages(repos = 'https://cran.rstudio.com/'))
@@ -45,8 +44,9 @@ jobs:
           packages = merge(dratPackages, cranPackages, by = 'name')
 
           # Split out CRAN version levels (assuming no dev level exists on CRAN)
-          packages[, (paste0('cran_', versionLevels[1:3])) :=
-                    tstrsplit(cran_version, '.', fixed = TRUE, type.convert = TRUE)]
+          packages[
+            , (paste0('cran_', versionLevels[1:3])) :=
+            tstrsplit(cran_version, '.', fixed = TRUE, type.convert = TRUE)]
 
           # Figure out which rows need update on CRAN
           packages[, needs_cran_update := 0]
@@ -58,10 +58,12 @@ jobs:
 
           packages = packages[needs_cran_update == 1]
 
-          needsUpdatesOutput = paste0(packages$name, '---', packages$drat_version, '---', packages$cran_version, collapse = '", "')
+          needsUpdatesOutput = paste0(
+            packages$name, '---', packages$drat_version,
+            '---', packages$cran_version, collapse = '", "')
           needsUpdatesOutput = paste0('["', needsUpdatesOutput, '"]')
 
-          s = sprintf('echo \'::set-output name=value::%s\'', needsUpdatesOutput)
+          s = sprintf("echo '::set-output name=value::%s'", needsUpdatesOutput)
           system(s)
 
         shell: Rscript {0}
@@ -74,7 +76,7 @@ jobs:
         id: issues
         uses: lee-dohm/select-matching-issues@v1.2.0
         with:
-          query: 'label:cran-update is:open'
+          query: "label:cran-update is:open"
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Close found issues
         run: |
@@ -94,7 +96,7 @@ jobs:
       issues: write
     strategy:
       matrix:
-        value: ${{fromJson(needs.check_version_number.outputs.matrix)}}
+        value: ${{ fromJson(needs.check_version_number.outputs.matrix) }}
     name: Create issue for packages ${{ matrix.value }}
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
