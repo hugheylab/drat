@@ -8,6 +8,7 @@ jobs:
     name: Check version numbers of packages
     outputs:
         matrix: ${{ steps.get_packages.outputs.value }}
+        has_packages: ${{ steps.get_packages.outputs.has_packages }}
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
@@ -66,6 +67,11 @@ jobs:
           s = sprintf("echo '::set-output name=value::%s'", needsUpdatesOutput)
           system(s)
 
+          if (nrow(packages) > 0) {
+            system("echo '::set-output name=has_packages::true'")
+          } else {
+            system("echo '::set-output name=has_packages::false'")}
+
         shell: Rscript {0}
 
   close_open_cran:
@@ -100,6 +106,7 @@ jobs:
     name: Create issue for packages ${{ matrix.value }}
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    if: ${{ fromJson(needs.check_version_number.outputs.has_packages) }}
     steps:
       - uses: actions/checkout@v2
 
