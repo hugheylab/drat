@@ -1819,6 +1819,16 @@ License: GPL-2
 MD5sum: cedd11d79cf0739f9387ddd49a2949f8
 NeedsCompilation: no
 
+Package: spectr
+Version: 1.0.2
+Depends: R (>= 3.6)
+Imports: data.table (>= 1.12.2), foreach (>= 1.5.0), lomb (>= 2.0)
+Suggests: doParallel (>= 1.0.15), knitr, qs (>= 0.24.1), rmarkdown,
+        testthat (>= 3.0.3)
+License: GPL-2
+MD5sum: 46f2b60999e51a6a7e3ae64c1e382e83
+NeedsCompilation: no
+
 Package: tipa
 Version: 0.0.0.9004
 Depends: R (>= 3.4.2)
