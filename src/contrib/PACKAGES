@@ -1826,7 +1826,7 @@ Imports: data.table (>= 1.12.2), foreach (>= 1.5.0), lomb (>= 2.0)
 Suggests: doParallel (>= 1.0.15), knitr, qs (>= 0.24.1), rmarkdown,
         testthat (>= 3.0.3)
 License: GPL-2
-MD5sum: 46f2b60999e51a6a7e3ae64c1e382e83
+MD5sum: 59e1b15bf39bd1eb4df7068f69c5d35c
 NeedsCompilation: no
 
 Package: tipa
