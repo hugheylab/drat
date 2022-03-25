@@ -1101,6 +1101,20 @@ License: GPL-2
 MD5sum: 432e94db86647a0f92e0762918cd2752
 NeedsCompilation: no
 
+Package: pmparser
+Version: 1.0.7
+Depends: R (>= 3.6)
+Imports: curl (>= 4.3.2), data.table (>= 1.12.2), DBI (>= 1.1.0),
+        foreach (>= 1.5.0), glue (>= 1.4.2), iterators (>= 1.0.12),
+        jsonlite (>= 1.7.0), R.utils (>= 2.10.1), RCurl (>= 1.98),
+        withr (>= 2.3.0), xml2 (>= 1.3.3)
+Suggests: bigrquery (>= 1.3.2), doParallel (>= 1.0.16), RMariaDB (>=
+        1.0.9), RPostgres (>= 1.2.0), RSQLite (>= 2.2.0), testthat (>=
+        2.3.2), knitr, rmarkdown
+License: GPL-2
+MD5sum: 0e3906ce0884df55f980311d74ec7194
+NeedsCompilation: no
+
 Package: seeker
 Version: 0.0.0.9027
 Depends: R (>= 3.5)
