@@ -1609,7 +1609,7 @@ Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), ArrayExpress (>=
         3.1.0), tximport (>= 1.8.0), withr (>= 2.4.2), yaml (>= 2.2.1)
 Suggests: doParallel (>= 1.0.16), knitr, org.Mm.eg.db, rmarkdown
 License: GPL-2
-MD5sum: 1e6d2f7f99c8ac62cd0824cc3d1fed76
+MD5sum: 975a1b1e92c01649dd2ddebd03c049a9
 NeedsCompilation: no
 
 Package: simphony
