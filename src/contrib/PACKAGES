@@ -1831,6 +1831,17 @@ License: GPL-2
 MD5sum: 3d5712b6785e3216ba91ff970561387f
 NeedsCompilation: no
 
+Package: simphony
+Version: 1.0.1
+Depends: R (>= 3.4)
+Imports: data.table (>= 1.11.4), foreach (>= 1.4.4)
+Suggests: ggplot2 (>= 3.0.0), kableExtra (>= 0.9.0), knitr (>= 1.20),
+        limma (>= 3.34.9), precrec (>= 0.9.1), rmarkdown (>= 1.9),
+        testthat (>= 2.0.0)
+License: GPL-2
+MD5sum: 705fefacacdaa58a4c5436448a5197e3
+NeedsCompilation: no
+
 Package: spectr
 Version: 0.0.0.9012
 Depends: R (>= 3.6)
