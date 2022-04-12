@@ -2102,5 +2102,5 @@ Imports: abind (>= 1.4-3), bbmle (>= 1.0.17), data.table (>= 1.14.2),
 Suggests: doParallel (>= 1.0.10), ggplot2 (>= 3.1.0), knitr (>= 1.20),
         rmarkdown (>= 1.10)
 License: GPL-2
-MD5sum: b14378b1b1bee16acdec07bf0842d312
+MD5sum: 4cb85be4d61a14819597dbfa0e11268d
 NeedsCompilation: no
