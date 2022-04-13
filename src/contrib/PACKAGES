@@ -1138,7 +1138,7 @@ Suggests: bigrquery (>= 1.3.2), doParallel (>= 1.0.16), RMariaDB (>=
         1.0.9), RPostgres (>= 1.2.0), RSQLite (>= 2.2.0), testthat (>=
         2.3.2), knitr, rmarkdown
 License: GPL-2
-MD5sum: 95f7403df884a1e73e50b761991dacab
+MD5sum: 10f0713570fba423a02ef30744a81f6a
 NeedsCompilation: no
 
 Package: seeker
