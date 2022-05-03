@@ -791,6 +791,18 @@ License: GPL-2
 MD5sum: c0ee1a211864f7417477a59bb697441b
 NeedsCompilation: no
 
+Package: phers
+Version: 0.0.1
+Depends: R (>= 3.5)
+Imports: checkmate (>= 2.0.0), data.table (>= 1.5.0), foreach (>=
+        1.5.2), stats (>= 4.0.2), MASS (>= 7.3-55), iterators (>=
+        1.0.14), BEDMatrix (>= 2.0.3)
+Suggests: doParallel (>= 1.0.17), knitr, rmarkdown, testthat (>=
+        3.1.0), ggplot2 (>= 3.3.5), qs (>= 0.25.2)
+License: GPL-2
+MD5sum: c00c7e4b8d79e7d26155742ebf8928ad
+NeedsCompilation: no
+
 Package: pmparser
 Version: 0.0.0.9020
 Depends: R (>= 3.6)
