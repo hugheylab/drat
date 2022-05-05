@@ -800,7 +800,7 @@ Imports: checkmate (>= 2.0.0), data.table (>= 1.5.0), foreach (>=
 Suggests: doParallel (>= 1.0.17), knitr, rmarkdown, testthat (>=
         3.1.0), ggplot2 (>= 3.3.5), qs (>= 0.25.2)
 License: GPL-2
-MD5sum: bb00c9b0dba1f6bc1db046632065fa3e
+MD5sum: 28f7e6955b3af365c260ca2ef6aeb0e3
 NeedsCompilation: no
 
 Package: pmparser
