@@ -36,14 +36,16 @@ jobs:
             , (paste0('drat_', versionLevels)) :=
               tstrsplit(version, '.', fixed = TRUE, type.convert = TRUE)]
           # Establish max version using the major, minor, patch, then dev version.
+          dratPackages[, max_major := max(drat_major), by = name]
           dratPackages = dratPackages[max_major == drat_major]
           dratPackages[, max_minor := max(drat_minor), by = name]
           dratPackages = dratPackages[max_minor == drat_minor]
           dratPackages[, max_patch := max(drat_patch), by = name]
           dratPackages = dratPackages[max_patch == drat_patch]
+          dratPackages[is.na(drat_dev), drat_dev := 0]
           dratPackages[, max_dev := max(drat_dev), by = name]
 
-          dratPackages = dratPackages[is.na(drat_dev) || max_dev == drat_dev, .(name, drat_version = version, drat_major, drat_minor, drat_patch, drat_dev)]
+          dratPackages = dratPackages[max_dev == drat_dev , .(name, drat_version = version, drat_major, drat_minor, drat_patch, drat_dev)]
 
           # Read in packages availability on CRAN and merge with drat data.table
           cranPackages = as.data.table(available.packages(repos = 'https://cran.rstudio.com/'))
