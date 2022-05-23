@@ -30,14 +30,20 @@ jobs:
           dratPackages = data.table(filename = list.files(file.path('src', 'contrib')))
           dratPackages[, filename := gsub('.tar.gz', '', filename, fixed = TRUE)]
           dratPackages = dratPackages[, c('name', 'version') := tstrsplit(filename, '_', fixed = TRUE)]
-          dratPackages = dratPackages[
-            !is.na(version), .(drat_version = max(version)), by = name]
-
           # Establish version levels and split out into separate columns
           versionLevels = c('major', 'minor', 'patch', 'dev')
           dratPackages[
-            , (paste0('drat_', versionLevels)) := 
-            tstrsplit(drat_version, '.', fixed = TRUE, type.convert = TRUE)]
+            , (paste0('drat_', versionLevels)) :=
+              tstrsplit(version, '.', fixed = TRUE, type.convert = TRUE)]
+          # Establish max version using the major, minor, patch, then dev version.
+          dratPackages = dratPackages[max_major == drat_major]
+          dratPackages[, max_minor := max(drat_minor), by = name]
+          dratPackages = dratPackages[max_minor == drat_minor]
+          dratPackages[, max_patch := max(drat_patch), by = name]
+          dratPackages = dratPackages[max_patch == drat_patch]
+          dratPackages[, max_dev := max(drat_dev), by = name]
+
+          dratPackages = dratPackages[is.na(drat_dev) || max_dev == drat_dev, .(name, drat_version = version, drat_major, drat_minor, drat_patch, drat_dev)]
 
           # Read in packages availability on CRAN and merge with drat data.table
           cranPackages = as.data.table(available.packages(repos = 'https://cran.rstudio.com/'))
