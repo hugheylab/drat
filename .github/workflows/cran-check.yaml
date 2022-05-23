@@ -45,7 +45,7 @@ jobs:
           dratPackages[is.na(drat_dev), drat_dev := 0]
           dratPackages[, max_dev := max(drat_dev), by = name]
 
-          dratPackages = dratPackages[max_dev == drat_dev , .(name, drat_version = version, drat_major, drat_minor, drat_patch, drat_dev)]
+          dratPackages = dratPackages[max_dev == drat_dev, .(name, drat_version = version, drat_major, drat_minor, drat_patch, drat_dev)]
 
           # Read in packages availability on CRAN and merge with drat data.table
           cranPackages = as.data.table(available.packages(repos = 'https://cran.rstudio.com/'))
