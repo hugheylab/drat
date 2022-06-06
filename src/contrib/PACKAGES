@@ -1786,11 +1786,11 @@ Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), ArrayExpress (>=
         foreach (>= 1.4.4), GEOquery (>= 2.58.0), glue (>= 1.5.0),
         jsonlite (>= 1.7.2), methods, qs (>= 0.21.2), R.utils (>=
         2.11.0), RCurl (>= 1.98), readr (>= 1.4.0), sessioninfo (>=
-        1.2.0), testthat (>= 3.1.0), tximport (>= 1.8.0), withr (>=
-        2.4.2), yaml (>= 2.2.1)
-Suggests: doParallel (>= 1.0.16), knitr, org.Mm.eg.db, rmarkdown
+        1.2.0), tximport (>= 1.8.0), withr (>= 2.4.2), yaml (>= 2.2.1)
+Suggests: doParallel (>= 1.0.16), knitr, org.Mm.eg.db, rmarkdown,
+        testthat (>= 3.1.0)
 License: GPL-2
-MD5sum: 1c9a18f25efb39a7bd438f9bf6daf236
+MD5sum: acaf41a858dda5b6941daea33c941cb6
 NeedsCompilation: no
 
 Package: simphony
