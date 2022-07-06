@@ -1870,7 +1870,7 @@ Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), ArrayExpress (>=
 Suggests: Biobase, doParallel (>= 1.0.16), knitr, org.Mm.eg.db,
         rmarkdown, testthat (>= 3.1.0)
 License: GPL-2
-MD5sum: a9c07cba940c99185053d6084a8db5e4
+MD5sum: 4b599dc294719696ffe3a00aabd0a331
 NeedsCompilation: no
 
 Package: simphony
