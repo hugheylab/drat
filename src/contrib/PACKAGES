@@ -1960,8 +1960,8 @@ Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), ArrayExpress (>=
         1.2.0), tximport (>= 1.8.0), withr (>= 2.4.2), yaml (>= 2.2.1)
 Suggests: Biobase, doParallel (>= 1.0.16), knitr, org.Mm.eg.db,
         rmarkdown, testthat (>= 3.1.0)
-License: GPL-2
-MD5sum: f9dbad3aa7b470d5c757a565d694efb1
+License: MIT + file LICENSE
+MD5sum: 37cdd39814f0d06321b21c48e616a464
 NeedsCompilation: no
 
 Package: simphony
