@@ -2451,6 +2451,15 @@ License: GPL-2
 MD5sum: d750cf87b9b98f9dfce93480659c96a1
 NeedsCompilation: no
 
+Package: tipa
+Version: 1.0.7
+Depends: R (>= 3.4)
+Imports: optimr (>= 2016-8.16)
+Suggests: knitr, rmarkdown
+License: GPL-2
+MD5sum: 59d48bba6c61ce24366bfea54a915165
+NeedsCompilation: no
+
 Package: zeitzeiger
 Version: 1.0.0.4
 Depends: R (>= 3.2.1)
