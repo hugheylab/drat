@@ -327,7 +327,7 @@ Suggests: annotate (>= 1.58.0), data.table (>= 1.12.2), foreach (>=
         matrixStats (>= 0.56.0), org.Mm.eg.db (>= 3.6.0), qs (>=
         0.25.2), rmarkdown (>= 1.9), testthat (>= 3.0.4)
 License: GPL-2
-MD5sum: 5e5840407e1c1dca13f181edb453a38f
+MD5sum: b131b7a7298f9e7d3c6b46f60af5074e
 NeedsCompilation: no
 
 Package: limorhyde2
