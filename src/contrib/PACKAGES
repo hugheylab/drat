@@ -538,7 +538,7 @@ Suggests: cowplot (>= 1.1.1), knitr, doParallel (>= 1.0.15), ggplot2
         (>= 3.3.5), glue (>= 1.6.1), qs (>= 0.24.1), rmarkdown,
         testthat (>= 3.0.0)
 License: GPL-2
-MD5sum: 49921cc9a29f3fadd0cc819f7e8cffba
+MD5sum: 4877ae526e5b5cce1af06998663772b8
 NeedsCompilation: no
 
 Package: limorhyde2
