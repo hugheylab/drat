@@ -860,7 +860,7 @@ Imports: BEDMatrix (>= 2.0.3), checkmate (>= 2.0.0), data.table (>=
 Suggests: doParallel (>= 1.0.17), knitr, rmarkdown, testthat (>=
         3.1.0), qs (>= 0.25.2)
 License: GPL-2
-MD5sum: 3955928549ca66f4dcca8267e2a149d9
+MD5sum: face0340856305e57ea8a5f70b2f0d75
 NeedsCompilation: no
 
 Package: pmparser
