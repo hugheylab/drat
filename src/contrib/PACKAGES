@@ -542,6 +542,20 @@ MD5sum: 4877ae526e5b5cce1af06998663772b8
 NeedsCompilation: no
 
 Package: limorhyde2
+Version: 0.0.13
+Depends: R (>= 3.6)
+Imports: abind (>= 1.4-5), ashr (>= 2.2-54), checkmate (>= 2.0.0),
+        data.table (>= 1.12.8), DESeq2 (>= 1.30.0), foreach (>= 1.5.0),
+        HDInterval (>= 0.2.2), iterators (>= 1.0.12), limma (>=
+        3.42.2), mashr (>= 0.2.50), pbs (>= 1.1), zeallot (>= 0.1.0)
+Suggests: cowplot (>= 1.1.1), knitr, doParallel (>= 1.0.15), ggplot2
+        (>= 3.3.5), glue (>= 1.6.1), qs (>= 0.24.1), rmarkdown,
+        testthat (>= 3.0.0)
+License: GPL-2
+MD5sum: 83fdd1603520ec6da5db8f06d4f61e1a
+NeedsCompilation: no
+
+Package: limorhyde2
 Version: 0.0.2
 Depends: R (>= 3.6)
 Imports: abind (>= 1.4-5), ashr (>= 2.2-51), checkmate (>= 2.0.0),
