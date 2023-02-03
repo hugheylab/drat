@@ -9,7 +9,7 @@ jobs:
       - name: Wait for drat to Update
         run: sleep 300s
         shell: bash
-      - name: Trigger socker Build
+      - name: Trigger stocker Build
         run: |
           curl -XPOST -u "jakejh:${{secrets.JAKEJH_PAT}}" \
             -H "Accept: application/vnd.github.everest-preview+json" \
