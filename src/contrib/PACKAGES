@@ -847,6 +847,23 @@ License: GPL-2
 MD5sum: c0ee1a211864f7417477a59bb697441b
 NeedsCompilation: no
 
+Package: metapredict
+Version: 1.1.4
+Depends: R (>= 3.5)
+Imports: affy (>= 1.48.0), annotate (>= 1.48.0), AnnotationDbi (>=
+        1.32.3), Biobase (>= 2.30.0), BiocGenerics (>= 0.16.1), cba (>=
+        0.2-15), cowplot (>= 0.9.3), data.table (>= 1.12.2), foreach
+        (>= 1.4.3), GEOquery (>= 2.36.0), ggplot2 (>= 2.2.1), glmnet
+        (>= 2.0-2), impute (>= 1.44.0), iterators (>= 1.0.12),
+        matrixStats (>= 0.15.0), methods (>= 3.2.1), org.Hs.eg.db (>=
+        3.2.3), org.Mm.eg.db (>= 3.2.3), pheatmap (>= 1.0.7), R.utils
+        (>= 2.11.0), RColorBrewer (>= 1.1-2), rlang (>= 0.4.11), sva
+        (>= 3.18.0)
+Suggests: knitr, rmarkdown, withr (>= 2.4.0), testthat (>= 3.0.0)
+License: GPL-2
+MD5sum: 3a7ec8b4b57b14e0922b21bbeb7a3edb
+NeedsCompilation: no
+
 Package: phers
 Version: 0.0.1
 Depends: R (>= 3.5)
