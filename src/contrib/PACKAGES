@@ -2239,6 +2239,22 @@ License: MIT + file LICENSE
 MD5sum: 3e1136f5a2d19fb04580a5df8abf8082
 NeedsCompilation: no
 
+Package: seeker
+Version: 1.1.1
+Depends: R (>= 3.5)
+Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), BiocManager (>=
+        1.30.0), biomaRt (>= 2.36.1), checkmate (>= 2.1.0), curl (>=
+        3.2), data.table (>= 1.11.8), foreach (>= 1.4.4), GEOquery (>=
+        2.58.0), glue (>= 1.5.0), jsonlite (>= 1.7.2), methods, qs (>=
+        0.21.2), R.utils (>= 2.11.0), RCurl (>= 1.98), readr (>=
+        1.4.0), sessioninfo (>= 1.2.0), tximport (>= 1.8.0), withr (>=
+        2.4.2), yaml (>= 2.2.1)
+Suggests: ArrayExpress (>= 1.50.0), Biobase, doParallel (>= 1.0.17),
+        knitr, org.Mm.eg.db, rmarkdown, testthat (>= 3.1.0)
+License: MIT + file LICENSE
+MD5sum: 05b22f7770fd491e0f97426f68ef17bf
+NeedsCompilation: no
+
 Package: simphony
 Version: 0.0.0.9017
 Depends: R (>= 3.4)
