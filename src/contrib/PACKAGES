@@ -2298,7 +2298,7 @@ Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), BiocManager (>=
 Suggests: ArrayExpress (>= 1.50.0), Biobase, doParallel (>= 1.0.17),
         knitr, org.Mm.eg.db, rmarkdown, testthat (>= 3.1.0)
 License: MIT + file LICENSE
-MD5sum: e0badaf311a6436131708f33c074865b
+MD5sum: 104083b2e634cf0f118c37e65a88c94c
 NeedsCompilation: no
 
 Package: simphony
